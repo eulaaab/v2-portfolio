@@ -1,0 +1,39 @@
+@keyframes slide {
+  0% {
+    transform: translate(-100%, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes MoveLeftRight {
+  0% {
+    transform: translate(-500%, 0);
+    background-color: #000;
+  }
+
+  100% {
+    transform: translate(0%, 0);
+    background-color: #fff;
+  }
+}
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translate(0, -500%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes MoveDownUp {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

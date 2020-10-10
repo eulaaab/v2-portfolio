@@ -1,0 +1,394 @@
+@import "../../styles/partials/breakpoints";
+
+.project {
+  @include mobile {
+    &__container {
+      display: flex;
+      margin: 1rem 0;
+      &:last-child {
+        padding-bottom: 70px;
+      }
+    }
+    &__card {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      width: 450px;
+      //height: 350px;
+      background-color: #2c3e50;
+      transition: 0.5s;
+      max-width: 100%;
+      min-width: 250px;
+      min-height: 350px;
+      // margin: 0 auto;
+      // margin-top: 3rem;
+      border-radius: 0.5rem;
+      user-select: none;
+      margin: 1rem auto;
+    }
+    &__card-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 0.5rem;
+    }
+    &__card-overlay-2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      filter: blur(20px) brightness(0.75);
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      will-change: transform;
+    }
+    &__content {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 17;
+      //test
+    }
+    &__thumbnail {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 2rem 0 2rem;
+      flex: 1 1 auto;
+      //test
+      //height: 100%;
+      //width: 100%;
+      // opacity: 0;
+      // transition: 0.5s ease;
+      // background-color: #008cba;
+    }
+    &__text {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(236, 240, 241, 0.2);
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #ecf0f1;
+      margin: 0.2rem 0;
+      @include tablet {
+        margin-top: 4rem;
+      }
+    }
+    &__blurb {
+      font-size: 0.875rem;
+      margin: 0.2rem 0;
+    }
+    &__tools {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    &__tool {
+      margin: 0.5rem 0.5rem 0;
+      padding: 0.25rem 0.75rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 2rem;
+    }
+    @include tablet {
+      &__list {
+        padding: 0 1rem;
+        width: 80%;
+      }
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    &__container {
+      display: flex;
+    }
+    &__list {
+      padding: 0 2rem;
+    }
+    &__card {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      width: 450px;
+      //height: 350px;
+      background-color: #2c3e50;
+      transition: 0.5s;
+      max-width: 100%;
+      min-width: 250px;
+      min-height: 350px;
+      // margin: 0 auto;
+      // margin-top: 3rem;
+      border-radius: 0.5rem;
+      user-select: none;
+      margin: 1rem auto;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &__card-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 0.5rem;
+    }
+    &__card-overlay-2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      filter: blur(20px) brightness(0.75);
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      will-change: transform;
+    }
+    &__content {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      //test
+    }
+    &__thumbnail {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 2rem 0 2rem;
+      flex: 1 1 auto;
+      //test
+      //height: 100%;
+      //width: 100%;
+      // opacity: 0;
+      // transition: 0.5s ease;
+      // background-color: #008cba;
+    }
+    &__text {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      box-sizing: border-box;
+      border-top: 1px solid rgba(236, 240, 241, 0.2);
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #ecf0f1;
+      margin: 0.2rem 0;
+    }
+    &__blurb {
+      font-size: 0.875rem;
+      margin: 0.2rem 0;
+    }
+    &__tools {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    &__tool {
+      margin: 0.5rem 0.5rem 0;
+      padding: 0.25rem 0.75rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 2rem;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    &__modal {
+      margin: 3rem 3rem;
+      width: 90%;
+      //height: 90%;
+    }
+    // &__media-container {
+    //   position: relative;
+    //   width: 100%;
+    // }
+    &__media {
+      height: 400px;
+      overflow: hidden;
+      display: "block";
+      max-width: 100%;
+      margin: 0 auto;
+      align-self: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+
+.MuiPaper-root
+  .MuiCard-root
+  .MuiPaper-elevation1
+  .MuiPaper-rounded
+  .project__modal-card {
+  height: inherit;
+}
+
+.image {
+  @include tablet {
+    &__wrapper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.image__wrapper:hover .text {
+  @include tablet {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff !important;
+  text-decoration: none !important;
+  visibility: hidden;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  font-size: 2rem;
+  text-align: center;
+  padding: 30% 0 0;
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+a.card {
+  &__link {
+    &:any-link,
+    &:visited,
+    &:hover {
+      color: #ecf0f1;
+      text-decoration: none;
+    }
+  }
+}
+
+.project {
+  &__card {
+    position: relative;
+    // max-width: 100%;
+    // width: 250px;
+    // min-width: 250px;
+    // min-height: 350px;
+    display: flex;
+    // flex-flow: column;
+    // background-color: #ecf0f1;
+    // border-radius: 0.25rem;
+    // margin: 1rem;
+    // user-select: none;
+    // transition: 0.25s;
+    &__float:hover {
+      // transform: translateY(-8px);
+      // box-shadow: 0 10px 10px -10px rgba(#7f8c8d, 1);
+    }
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  z-index: 10;
+  .thumbnail {
+    display: flex;
+    height: inherit;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 0 0;
+    flex: 1 1 auto;
+    place-content: center;
+    img {
+      width: 40rem;
+      height: 50%;
+      margin: 0 auto;
+      object-fit: contain;
+      box-shadow: 0 16px 24px 2px rgba(#2c3e50, 0.24),
+        0 6px 30px 5px rgba(#2c3e50, 0.22), 0 8px 10px -5px rgba(#2c3e50, 0.4);
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(#ecf0f1, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ecf0f1;
+    .description {
+      color: rgba(#ecf0f1, 0.8);
+      font-size: 0.875rem;
+    }
+  }
+
+  .tags {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .tag {
+      margin: 0 0.5rem;
+      padding: 0.25rem 0.75rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 2rem;
+    }
+  }
+}
+
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(20px) brightness(0.75);
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0, 0, 0);
+    transform: translateZ(0);
+    will-change: transform;
+  }
+}
+
+.modal {
+  color: #ecf0f1;
+}

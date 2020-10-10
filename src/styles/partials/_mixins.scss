@@ -1,0 +1,29 @@
+@import "./animations";
+
+@mixin slide {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@mixin MoveUpDown {
+  animation-name: MoveUpDown;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@mixin MoveLeftRight {
+  animation-name: MoveLeftRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@mixin MoveDownUp {
+  animation-name: MoveDownUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}

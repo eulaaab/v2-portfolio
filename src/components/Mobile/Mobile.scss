@@ -1,0 +1,149 @@
+@import "../../styles/partials/breakpoints";
+
+.mobile {
+  transition: 10s ease-in;
+  @include tablet {
+    display: none;
+  }
+  &__icons {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    border-top: 1px rgba(0, 0, 0, 0.7) solid;
+    z-index: 30;
+  }
+}
+
+.element {
+  // margin-bottom: 100px;
+  padding-top: 10px;
+  @include tablet {
+    display: none;
+    height: unset;
+    overflow-y: auto !important;
+  }
+  &__scroll {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 40;
+  }
+}
+
+.contact {
+  height: 700px;
+  &:active {
+    color: blue;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.up {
+  background-color: #000000;
+  color: #fff;
+  @include tablet {
+    display: none;
+  }
+}
+
+.landing {
+  //margin-bottom: 3rem;
+
+  color: #e5e5e5;
+  &__image {
+    display: flex;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    object-fit: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    background-position: 50%;
+  }
+  &__overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    place-items: center;
+    position: relative;
+    z-index: 1;
+    top: -120px;
+    height: 100vh;
+  }
+  &__card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem 1rem;
+    text-align: center;
+    margin: 15rem 2rem 2rem;
+    border-radius: 10%;
+  }
+  &__button {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    @include tablet {
+      display: none !important;
+    }
+  }
+  &__header {
+    flex-grow: 1;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.nav {
+  &__mobile {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 37;
+    background-color: #000;
+    justify-content: space-around;
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.MuiTypography-h3 {
+  font-size: 2rem !important;
+  @include tablet {
+    font-size: unset !important;
+  }
+}
+
+.MuiTypography-h4 {
+  font-size: 1.4rem !important;
+  // @include tablet {
+  //   font-size: unset !important;
+  // }
+}
+
+.MuiTypography-h6 {
+  font-size: 1rem !important;
+  padding: 0.5rem !important;
+  @include tablet {
+    font-size: unset;
+    padding: unset;
+  }
+}

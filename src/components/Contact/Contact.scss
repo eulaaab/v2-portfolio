@@ -1,0 +1,9 @@
+.contact {
+  display: flex;
+  position: relative;
+  z-index: inherit;
+  padding: 5rem 3rem 3rem;
+  &__button-style {
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+}

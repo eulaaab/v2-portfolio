@@ -1,0 +1,134 @@
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/mixins";
+
+.home {
+  //display: none;
+  // &__non-mobile {
+  //   display: flex;
+  // }
+  @include tablet {
+    max-width: 100% !important;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__skills {
+    padding: 1rem 2rem;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      flex-direction: column;
+      padding: 0 2.5rem;
+    }
+  }
+  &__heading {
+    display: flex !important;
+    position: relative !important;
+    margin: 2rem 1rem 1rem 1rem !important;
+    min-width: fit-content;
+    text-align: center !important;
+    @include tablet {
+      margin: 4rem 1rem 1rem 1rem !important;
+    }
+    @include desktop {
+      max-width: unset !important;
+    }
+  }
+  &__header {
+    @include tablet {
+      align-self: center;
+    }
+  }
+  &__icon {
+    margin: 0.5rem;
+    align-self: center;
+  }
+  &__text {
+    display: flex !important;
+    position: relative !important;
+    margin-left: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    @include tablet {
+      transition: 10s ease-in-out;
+      align-items: unset;
+      @include MoveUpDown;
+    }
+  }
+  &__description {
+    margin: 1rem 2rem 0.5rem;
+    @include desktop {
+      width: 75%;
+      margin: 1rem auto 3rem;
+      padding: 1rem;
+      max-width: 80% !important;
+    }
+  }
+  .MuiTypography-h3 {
+    font-size: 2rem !important;
+  }
+}
+
+.skill {
+  &__header {
+    display: flex;
+    padding: 0.5rem;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      //      flex-direction: column;
+    }
+  }
+  &__wrapper {
+    align-self: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      display: unset;
+      flex-direction: unset;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    @include tablet {
+      margin: 2rem 2rem;
+    }
+    @include desktop {
+      margin: 2rem 2rem;
+      &:hover {
+        transform: scale(1.1);
+
+        margin: 2rem 2rem;
+      }
+    }
+  }
+  @include mobile {
+    &__icon {
+      width: 50px;
+    }
+  }
+  @include tablet {
+    &__header {
+      align-items: center;
+      padding-left: 0.5rem;
+      padding-top: 0.5rem;
+    }
+    &__table {
+      display: flex;
+    }
+    &__image {
+      margin: 0.5rem;
+    }
+  }
+}
