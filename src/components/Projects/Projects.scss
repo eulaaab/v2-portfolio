@@ -45,6 +45,7 @@ a.card-link {
     @include mobile {
       margin-left: 2rem;
       margin-right: 2rem;
+      padding: unset;
     }
     margin: 0 auto;
     padding: 0 3rem;

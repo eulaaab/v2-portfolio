@@ -7,8 +7,6 @@ import {
   Paper,
   Card,
   CardContent,
-  CardMedia,
-  CardActionArea,
   Avatar,
 } from "@material-ui/core/";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
