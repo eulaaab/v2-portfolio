@@ -5,6 +5,10 @@ import {
   IconButton,
   Typography,
   Paper,
+  Card,
+  CardContent,
+  CardMedia,
+  CardActionArea,
   Avatar,
 } from "@material-ui/core/";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -15,6 +19,7 @@ import "./About.scss";
 import eula from "../../assets/images/photo.jpg";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import EmailIcon from '@material-ui/icons/Email';
+import skyDive from "../../assets/images/eula-dive.png"
 
 function About() {
   return (
@@ -59,6 +64,14 @@ function About() {
           guitar, or planning my next food adventure.
         </Typography>
       </Paper>
+      <Card className="about__sky-container">
+        <img src={skyDive} className="about__sky" alt="Eula Bengco Sky Dive"/>
+        <CardContent>
+          <Typography variant="body2" color="textSecondary" component="p">
+            I jumped off a plane at Byron Bay, Queensland, Australia back in September 2017.
+          </Typography>
+        </CardContent>
+      </Card>
       <div className="about__links">
         <AccountCircleIcon color="action" className="about__icon" />
         <Typography variant="h4" className="about__header">

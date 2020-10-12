@@ -2,6 +2,12 @@
 @import "../../styles/partials/mixins";
 
 .about {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  // @include tablet {
+  //   padding-left: 1rem;
+  //   padding-right: 1rem;
+  // }
   &__text {
     display: flex !important;
     position: relative !important;
@@ -10,7 +16,7 @@
     padding-top: 60px;
   }
   &__description {
-    margin: 1rem 2rem 0.5rem;
+    margin: 1rem 0rem 0.5rem;
   }
   &__header {
     margin-right: 1rem !important;
@@ -27,6 +33,14 @@
   &__icons,
   &__links {
     display: none;
+  }
+  &__sky-container {
+    margin: 0 3rem;
+  }
+  &__sky {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
   }
 
   @include tablet {
