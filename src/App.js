@@ -79,7 +79,6 @@ function App() {
             </Grid>
           </Grid>
           <Switch>
-            <Route path="/contact" component={Contact}/>
             <Route path="/about" component={About} />
             <Route path="/" exact component={Home}  />
             <Route path="/projects" component={Projects} />
