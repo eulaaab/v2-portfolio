@@ -3,7 +3,28 @@
   position: relative;
   z-index: inherit;
   padding: 5rem 3rem 3rem;
-  &__button-style {
-    background-color: rgba(0, 0, 0, 0.54);
+  height: max-content;
+  &__button {
+    align-self: center;
   }
+  &__wrapper {
+    padding: 2rem;
+  }
+  &__para {
+    padding: 1rem 0;
+    line-height: 1;
+  }
+  &__row {
+    padding: 0.2rem 0;
+    width: inherit;
+  }
+  &__button-container {
+    display: flex;
+    flex-direction: row;
+    place-content: flex-end;
+  }
+}
+
+.MuiFormControl-root {
+  width: 100% !important;
 }

@@ -14,6 +14,7 @@ import CodeIcon from "@material-ui/icons/Code";
 import "./About.scss";
 import eula from "../../assets/images/photo.jpg";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import EmailIcon from '@material-ui/icons/Email';
 
 function About() {
   return (
@@ -61,7 +62,7 @@ function About() {
       <div className="about__links">
         <AccountCircleIcon color="action" className="about__icon" />
         <Typography variant="h4" className="about__header">
-          Learn More About Me:
+          Contact
         </Typography>
       </div>
       <Paper className="about__icons">
@@ -106,6 +107,17 @@ function About() {
               >
                 <GitHubIcon className="about__icon" />
               </IconButton>
+            </Tooltip>
+          </Grid>
+          <Grid item xs={3}>
+            <Tooltip title="Email" placement="bottom" arrow="true">
+            <a href="mailto:eulabengco@gmail.com?Subject=Saying Hi!">
+              <IconButton
+                aria-label="Email"
+              >
+                <EmailIcon className="about__icon" />
+              </IconButton>
+                </a>
             </Tooltip>
           </Grid>
         </Grid>

@@ -85,13 +85,17 @@ class Main extends Component {
             >
               <li className="nav__link">PROJECTS</li>
             </NavLink>
-            <NavLink
+          {
+            /*
+  <NavLink
               to="/contact"
               activeClassName="active"
               activeStyle={styles.activeStyle}
             >
               <li className="nav__link">CONTACT</li>
             </NavLink>
+            */
+          }
           </ul>
         </div>
       </section>

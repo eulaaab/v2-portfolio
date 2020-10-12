@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { Grid, IconButton, Tooltip, useMediaQuery } from "@material-ui/core";
+import { Grid, IconButton, Tooltip } from "@material-ui/core";
 import Main from "./components/Main/Main";
 import Mobile from "./components/Mobile/Mobile";
 import Home from "./components/Home/Home";
@@ -10,8 +10,7 @@ import Contact from "./components/Contact/Contact";
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  useHistory,
+  Switch, 
 } from "react-router-dom";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import DescriptionIcon from "@material-ui/icons/Description";
@@ -19,7 +18,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 //import { useMediaQuery } from "react-responsive";
 
 function App() {
-  const history = useHistory();
+  // const history = useHistory();
   // const isLaptop = useMediaQuery({
   //   query: "(min-device-width: 1200px)",
   // });
@@ -30,7 +29,7 @@ function App() {
   //   query: "(min-device-width: 320px)",
   // });
 
-  const isMobile = useMediaQuery("(min-width:320px)");
+  // const isMobile = useMediaQuery("(min-width:320px)");
 
   
   return (
