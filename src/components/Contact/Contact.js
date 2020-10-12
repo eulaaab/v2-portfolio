@@ -24,27 +24,38 @@ export default class Contact extends React.Component {
         onSubmit={this.submitForm}
         action={FORM_FULL_URL}
         method="POST"
-      
-      >
-       { 
-       //<!-- add your custom form HTML here -->
-      }
+        >
       <h1>Say Hi!</h1>
       <div className="contact__row">
+<p>Say hi, ask me about my experiences or any exciting opportunities you know, feel free to contact me using the form below. You can also give me a shout by emailing me directly using you own email service at <a href="mailto:eulabengco@gmail.com?Subject=Saying Hi!">
+eulabengco@gmail.com
 
-        <label>Email:</label>
-        <input type="email" name="_replyto"/>
+                </a></p>
       </div>
+      <div className="contact__row">
+        <label>Email:</label>
+        <input type="email" name="_replyto" placeholder="Enter Email"/>
+        </div>
+        <div className="contact__row">
+
       <label>Subject:</label>
-      <input  name="_subject" value="New submission!" />
+      <input  name="_subject" placeholder="Enter Subject Line" />
+          </div>
+          <div className="contact__row">
+
       <label>
     Your file:
     <FilledInput type="file" name="upload" className="contact__button-style"/>
   </label>
+            </div>
       <div className="contact__row">
+
       <label>Message:</label>
-        <input type="text" name="message" />
       </div>
+      <div className="contact__row">
+
+        <input type="text" name="message" placeholder="Enter Message"/>
+        </div>
 
         {status === "SUCCESS" ? <p>Thanks for your message! I'll get back to you in 1-2 business days!</p> : <Button variant="contained" size="large" className="contact__button">Submit</Button>}
         {status === "ERROR" && <p>Ooops! There was an error. Please email eulabengco@gmail.com from your email host.</p>}
