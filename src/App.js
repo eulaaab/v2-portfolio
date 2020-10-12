@@ -46,7 +46,7 @@ function App() {
             className="app__icons"
           >
             <Grid item xs={3}>
-              <Tooltip title="LinkedIn" placement="bottom" arrow="true">
+              <Tooltip title="LinkedIn" placement="bottom">
                 <IconButton
                   aria-label="LinkedIn"
                   href="https://www.linkedin.com/in/eulabengco/"
@@ -57,7 +57,7 @@ function App() {
                 </IconButton>
               </Tooltip>
 
-              <Tooltip title="Resume" placement="bottom" arrow="true">
+              <Tooltip title="Resume" placement="bottom">
                 <IconButton
                   aria-label="Resume"
                   href="https://docs.google.com/document/d/1mRGhqcJQzpKn-3o8235B5nuiXQaxfMx55eAmZrLB5IA/edit?usp=sharing"
@@ -67,7 +67,7 @@ function App() {
                   <DescriptionIcon />
                 </IconButton>
               </Tooltip>
-              <Tooltip title="GitHub" placement="bottom" arrow="true">
+              <Tooltip title="GitHub" placement="bottom">
                 <IconButton
                   aria-label="GitHub"
                   href="https://github.com/eulaaab"

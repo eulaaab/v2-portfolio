@@ -17,6 +17,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import DescriptionIcon from "@material-ui/icons/Description";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+import EmailIcon from '@material-ui/icons/Email';
 
 // const styles = {
 //   activeStyle: {
@@ -44,7 +45,7 @@ class Mobile extends Component {
   }
   scrollTo() {
     scroller.scrollTo("scroll-to-element", {
-      duration: 700,
+      duration: 300,
       delay: 0,
       smooth: "easeInOutQuart",
     });
@@ -176,13 +177,20 @@ class Mobile extends Component {
               />
             </IconButton>
           </li>
+          <li>
+          <a href="mailto:eulabengco@gmail.com">
+          <IconButton>
+              <EmailIcon
+              />
+            </IconButton>
+            </a>
+          </li>
         </ul>
-
-        <a onClick={this.scrollToTop} className="element__scroll">
+        <div onClick={this.scrollToTop} className="element__scroll">
           <IconButton className="top">
             <ArrowUpwardIcon className="up" />
           </IconButton>
-        </a>
+        </div>
       </div>
     );
   }

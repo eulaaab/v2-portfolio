@@ -68,13 +68,12 @@ function About() {
       <Paper className="about__icons">
         <Grid
           container
-          sm={12}
           direction="row"
           justify="space-evenly"
           alignItems="center"
         >
           <Grid item xs={3}>
-            <Tooltip title="LinkedIn" placement="bottom" arrow="true">
+            <Tooltip title="LinkedIn" placement="bottom">
               <IconButton
                 aria-label="LinkedIn"
                 href="https://www.linkedin.com/in/eulabengco/"
@@ -86,7 +85,7 @@ function About() {
             </Tooltip>
           </Grid>
           <Grid item xs={3}>
-            <Tooltip title="Resume" placement="bottom" arrow="true">
+            <Tooltip title="Resume" placement="bottom">
               <IconButton
                 aria-label="Resume"
                 href="https://docs.google.com/document/d/1mRGhqcJQzpKn-3o8235B5nuiXQaxfMx55eAmZrLB5IA/edit?usp=sharing"
@@ -98,7 +97,7 @@ function About() {
             </Tooltip>
           </Grid>
           <Grid item xs={3}>
-            <Tooltip title="GitHub" placement="bottom" arrow="true">
+            <Tooltip title="GitHub" placement="bottom">
               <IconButton
                 aria-label="GitHub"
                 href="https://github.com/eulaaab"
@@ -110,7 +109,7 @@ function About() {
             </Tooltip>
           </Grid>
           <Grid item xs={3}>
-            <Tooltip title="Email" placement="bottom" arrow="true">
+            <Tooltip title="Email" placement="bottom">
             <a href="mailto:eulabengco@gmail.com?Subject=Saying Hi!">
               <IconButton
                 aria-label="Email"
