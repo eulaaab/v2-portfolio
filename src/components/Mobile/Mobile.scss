@@ -1,4 +1,5 @@
 @import "../../styles/partials/breakpoints";
+@import "../../styles/partials/mixins";
 
 .mobile {
   transition: 10s ease-in;
@@ -53,7 +54,6 @@
 
 .landing {
   //margin-bottom: 3rem;
-
   color: #e5e5e5;
   &__image {
     display: flex;
@@ -146,4 +146,9 @@
     font-size: unset;
     padding: unset;
   }
+}
+
+.move-down-up {
+  transition: 0.5s ease-in-out;
+  @include MoveDownUp;
 }

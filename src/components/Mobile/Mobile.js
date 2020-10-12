@@ -96,7 +96,7 @@ class Mobile extends Component {
             </Link>
           </li>
         </ul>
-        <section className="landing">
+        <section className="landing slide-left-right">
           <img className="landing__image" src={leafImage}  alt="leaf mobile"/>
           <div className="landing__overlay"></div>
           <div className="landing__text-container">
