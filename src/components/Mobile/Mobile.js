@@ -45,7 +45,7 @@ class Mobile extends Component {
   }
   scrollTo() {
     scroller.scrollTo("scroll-to-element", {
-      duration: 300,
+      duration: 200,
       delay: 0,
       smooth: "easeInOutQuart",
     });
@@ -97,7 +97,7 @@ class Mobile extends Component {
           </li>
         </ul>
         <section className="landing slide-left-right">
-          <img className="landing__image" src={leafImage}  alt="leaf mobile"/>
+          <img className="landing__image" src={leafImage} alt="leaf mobile" />
           <div className="landing__overlay"></div>
           <div className="landing__text-container">
             <div className="landing__card">
@@ -178,11 +178,11 @@ class Mobile extends Component {
             </IconButton>
           </li>
           <li>
-          <a href="mailto:eulabengco@gmail.com">
-          <IconButton>
-              <EmailIcon
-              />
-            </IconButton>
+            <a href="mailto:eulabengco@gmail.com">
+              <IconButton>
+                <EmailIcon
+                />
+              </IconButton>
             </a>
           </li>
         </ul>
