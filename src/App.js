@@ -1,4 +1,4 @@
-import React, {useLayoutEffect, useState} from "react";
+import React from "react";
 import "./App.scss";
 import { Grid, IconButton, Tooltip } from "@material-ui/core";
 import Main from "./components/Main/Main";
