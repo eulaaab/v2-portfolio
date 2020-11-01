@@ -19,12 +19,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import EmailIcon from '@material-ui/icons/Email';
 
-// const styles = {
-//   activeStyle: {
-//     fontWeight: "bolder",
-//   },
-// };
-
 class Mobile extends Component {
   constructor(props) {
     super(props);
