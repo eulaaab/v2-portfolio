@@ -107,8 +107,8 @@
     @include desktop {
       margin: 2rem 2rem;
       &:hover {
+        transition: transform 0.5s ease;
         transform: scale(1.1);
-
         margin: 2rem 2rem;
       }
     }

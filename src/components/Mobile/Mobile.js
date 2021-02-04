@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Mobile.scss";
-import leafImage from "../../assets/images/leaf.png";
+import winterImage from "../../assets/images/winter-photo-small.png";
 import { Button, Typography } from "@material-ui/core";
 import {
   Link,
@@ -91,7 +91,7 @@ class Mobile extends Component {
           </li>
         </ul>
         <section className="landing slide-left-right">
-          <img className="landing__image" src={leafImage} alt="leaf mobile" />
+          <img className="landing__image" src={winterImage} alt="winter mobile" />
           <div className="landing__overlay"></div>
           <div className="landing__text-container">
             <div className="landing__card">
