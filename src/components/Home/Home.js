@@ -16,7 +16,9 @@ import HerokuIcon from "../../assets/icons/svg/heroku-plain-wordmark.svg";
 import WordPressIcon from "../../assets/icons/png/wordpress-logotype-wmark.png";
 import MySQLIcon from "../../assets/icons/svg/mysql-original-wordmark.svg";
 import ReduxIcon from "../../assets/icons/svg/redux.svg";
-import { List, Typography, Paper } from "@material-ui/core/";
+import JQuery from "../../assets/icons/svg/jquery.svg";
+import Bulma from "../../assets/icons/svg/bulma.svg"
+import { List, Typography, Paper, Tooltip } from "@material-ui/core/";
 import LocalCafeRoundedIcon from "@material-ui/icons/LocalCafeRounded";
 import LaptopChromebookRoundedIcon from "@material-ui/icons/LaptopChromebookRounded";
 import MenuBookRoundedIcon from "@material-ui/icons/MenuBookRounded";
@@ -45,21 +47,33 @@ function Home() {
     },
     {
       id: 3,
-      name: "React",
-      image: ReactIcon,
-    },
-    {
-      id: 4,
       name: "SASS/SCSS",
       image: SCSSIcon,
     },
-
+    {
+      id: 4, 
+      name: "Bulma", 
+      image: Bulma 
+      },
     {
       id: 5,
       name: "Bootstrap",
       image: BootstrapIcon,
     },
-    { id: 6, name: "Material-UI", image: MaterialIcon },
+    { id: 6, 
+      name: "Material-UI", 
+      image: MaterialIcon 
+    },
+    
+    {
+      id: 7,
+      name: "React/Native",
+      image: ReactIcon,
+    },
+    { id: 8, 
+      name: "jQuery", 
+      image: JQuery 
+    },
   ];
 
   const backend = [
@@ -128,7 +142,7 @@ function Home() {
           building beautiful and user friendly websites to elevate user
           experience through visuals and interactions. I light up collaborative
           environments with my bright energy where I can learn, share and be
-          myself.
+          myself. I'm currently the main Frontend Developer for <Tooltip title="Metricsflow" placement="bottom"><a aria-label="Metricsflow" href="https://www.metricsflow.com/" target="_blank" rel="noopener noreferrer" className="home__link">Metricsflow</a></Tooltip> where I develop, maintain, and improve the app interface of the cookieless analytics reporting product deployed in <Tooltip title="Salesforce" placement="bottom"><a aria-label="Salesforce" href="https://www.salesforce.com/ca/" target="_blank" rel="noopener noreferrer" className="home__link">Salesforce</a></Tooltip>.
         </Typography>
       </Paper>
       <div className="home__text">

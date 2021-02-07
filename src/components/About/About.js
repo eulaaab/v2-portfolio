@@ -36,9 +36,9 @@ function About() {
       <Paper variant="outlined" className="about__description">
         <Typography variant="h6">
           I'm a highly-motivated individual who loves to explore and try new
-          things. I have been always fascinated with the internet, how it works
+          things. I have always been fascinated with the internet, how it works
           and decided to pursue my dream of becoming a Web Developer. I love the
-          feeling of writing bits of text and see it come to life on a website.
+          feeling of writing bits of code and see it come to life on a website. 
         </Typography>
       </Paper>
       <Paper variant="outlined" className="about__description">

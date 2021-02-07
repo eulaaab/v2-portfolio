@@ -12,6 +12,12 @@
       display: flex;
       flex-wrap: wrap;
     }
+    &__link {
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   &__skills {
     padding: 1rem 2rem;
