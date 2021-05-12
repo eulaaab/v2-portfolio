@@ -3,8 +3,8 @@ import { NavLink, withRouter } from "react-router-dom";
 import "./Main.scss";
 import "../../App.scss";
 import "fontsource-roboto";
-import mainVideo from "../../assets/video/winter-small.mp4";
-import winterImage from "../../assets/images/winter-photo-small.png";
+import mainVideo from "../../assets/video/summer-beach.mp4";
+import summerImage from "../../assets/images/summer.png";
 import { Button, Typography } from "@material-ui/core";
 
 const styles = {
@@ -26,7 +26,7 @@ class Main extends Component {
   render() {
     return (
       <section className="main">
-        <img className="main__image" src={winterImage} alt="snow winter portfolio look" />
+        <img className="main__image" src={summerImage} alt="summer portfolio look" />
         <div className="main__video">
           <div className="main__video--container">
             <video loop="loop" muted="muted" autoPlay="autoplay" id="mainVid">
