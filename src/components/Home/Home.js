@@ -142,7 +142,7 @@ function Home() {
           building beautiful and user friendly websites to elevate user
           experience through visuals and interactions. I light up collaborative
           environments with my bright energy where I can learn, share and be
-          myself. I'm currently the main Frontend Developer for <Tooltip title="Metricsflow" placement="bottom"><a aria-label="Metricsflow" href="https://www.metricsflow.com/" target="_blank" rel="noopener noreferrer" className="home__link">Metricsflow</a></Tooltip> where I develop, maintain, and improve the app interface of the cookieless analytics reporting product deployed in <Tooltip title="Salesforce" placement="bottom"><a aria-label="Salesforce" href="https://www.salesforce.com/ca/" target="_blank" rel="noopener noreferrer" className="home__link">Salesforce</a></Tooltip>.
+          myself. I'm currently a Frontend Developer for <Tooltip title="Treehouse" placement="bottom"><a aria-label="Treehouse" href="https://growwithtreehouse.ca/" target="_blank" rel="noopener noreferrer" className="home__link">Treehouse</a></Tooltip> where I help build Canada's next generation of maternal health software. I build features in the <Tooltip title="Community" placement="bottom"><a aria-label="Community" href="https://www.treehousecommunity.ca/" target="_blank" rel="noopener noreferrer" className="home__link">Community</a></Tooltip> platform and the desktop app Essentials.
         </Typography>
       </Paper>
       <div className="home__text">
