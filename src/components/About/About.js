@@ -8,15 +8,15 @@ import {
   Card,
   CardContent,
   Avatar,
-} from "@material-ui/core/";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import DescriptionIcon from "@material-ui/icons/Description";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import CodeIcon from "@material-ui/icons/Code";
+} from "@mui/material"; 
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DescriptionIcon from "@mui/icons-material/Description";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import CodeIcon from "@mui/icons-material/CodeOutlined";
 import "./About.scss";
 import eula from "../../assets/images/photo.jpg";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import EmailIcon from '@material-ui/icons/Email';
+import AccountCircleIcon from "@mui/icons-material/AccountCircleOutlined";
+import EmailIcon from '@mui/icons-material/Email';
 import skyDive from "../../assets/images/eula-dive.png"
 
 function About() {

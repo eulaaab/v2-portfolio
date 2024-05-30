@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { Grid, IconButton, Tooltip } from "@material-ui/core";
+import { Grid, IconButton, Tooltip } from "@mui/material";
 import Main from "./components/Main/Main";
 import Mobile from "./components/Mobile/Mobile";
 import Home from "./components/Home/Home";
@@ -9,11 +9,11 @@ import Projects from "./components/Projects/Projects";
 import {
   BrowserRouter as Router,
   Route,
-  Switch, 
+  Routes, 
 } from "react-router-dom";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import DescriptionIcon from "@material-ui/icons/Description";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DescriptionIcon from "@mui/icons-material/Description";
+import GitHubIcon from "@mui/icons-material/GitHub";
 //import { useMediaQuery } from "react-responsive";
 
 function App() {
@@ -78,11 +78,11 @@ function App() {
               </Tooltip>
             </Grid>
           </Grid>
-          <Switch>
-            <Route path="/about" component={About} />
-            <Route path="/" exact component={Home}  />
-            <Route path="/projects" component={Projects} />
-          </Switch>
+          <Routes>
+            <Route path="/about" element={<About/>} />
+            <Route path="/projects" element={<Projects/>} />
+            <Route path="/" exact element={<Home/>}  />
+          </Routes>
         </div>
       </Router>
     </div>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Mobile.scss";
 import summerImage from "../../assets/images/summer.png";
-import { Button, Typography } from "@material-ui/core";
+import { IconButton, Button, Typography } from "@mui/material";
 import {
   Link,
   Element,
@@ -12,12 +12,11 @@ import {
 import Home from "../../components/Home/Home";
 import About from "../../components/About/About";
 import Projects from "../../components/Projects/Projects";
-import { IconButton } from "@material-ui/core";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import DescriptionIcon from "@material-ui/icons/Description";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DescriptionIcon from "@mui/icons-material/Description";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpwardOutlined";
+import EmailIcon from '@mui/icons-material/Email';
 
 class Mobile extends Component {
   constructor(props) {

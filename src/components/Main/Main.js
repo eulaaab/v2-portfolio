@@ -1,29 +1,31 @@
-import React, { Component } from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Main.scss";
 import "../../App.scss";
 import "fontsource-roboto";
 import mainVideo from "../../assets/video/summer-beach.mp4";
 import summerImage from "../../assets/images/summer.png";
-import { Button, Typography } from "@material-ui/core";
+import { Button, Typography } from "@mui/material";
 
 const styles = {
   activeStyle: {
     fontWeight: "bolder",
   },
 };
-class Main extends Component {
-  componentDidMount() {
+export const Main = () => {
+
+useEffect(() => {
     const vid = document.getElementById("mainVid");
     vid.playbackRate = 0.6;
-  }
+}, [])
 
   // renderHome = (e) => {
   //   e.preventDefault();
   //   return <Home />;
   // };
 
-  render() {
+
+    const navigate = useNavigate();
     return (
       <section className="main">
         <img className="main__image" src={summerImage} alt="summer portfolio look" />
@@ -101,6 +103,6 @@ class Main extends Component {
       </section>
     );
   }
-}
 
-export default withRouter(Main);
+
+export default Main;

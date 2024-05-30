@@ -1,9 +1,9 @@
 import React from "react";
 import "./ProjectCard.scss";
-import { Modal, Link, Card, CardActionArea,CardContent, Typography, MobileStepper, Button } from "@material-ui/core/";
-import {useTheme } from '@material-ui/core/styles';
-import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
-import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import { Modal, Link, Card, CardActionArea,CardContent, Typography, MobileStepper, Button } from "@mui/material";
+import { useTheme } from '@mui/material';
+import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 
 const ProjectCard = (props) => {
   let { projectObj } = props;

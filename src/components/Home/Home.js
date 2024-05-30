@@ -18,14 +18,14 @@ import MySQLIcon from "../../assets/icons/svg/mysql-original-wordmark.svg";
 import ReduxIcon from "../../assets/icons/svg/redux.svg";
 import JQuery from "../../assets/icons/svg/jquery.svg";
 import Bulma from "../../assets/icons/svg/bulma.svg"
-import { List, Typography, Paper, Tooltip } from "@material-ui/core/";
-import LocalCafeRoundedIcon from "@material-ui/icons/LocalCafeRounded";
-import LaptopChromebookRoundedIcon from "@material-ui/icons/LaptopChromebookRounded";
-import MenuBookRoundedIcon from "@material-ui/icons/MenuBookRounded";
-import CreateIcon from "@material-ui/icons/Create";
-import CheckCircleOutlineIcon from "@material-ui/icons/CheckCircleOutline";
-import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import { List, Typography, Paper, Tooltip } from "@mui/material";
+import LocalCafeRoundedIcon from "@mui/icons-material/LocalCafeRounded";
+import LaptopChromebookRoundedIcon from "@mui/icons-material/LaptopChromebookRounded";
+import MenuBookRoundedIcon from "@mui/icons-material/MenuBookRounded";
+import CreateIcon from "@mui/icons-material/Create";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SkillCard from "../SkillCard/SkillCard";
 
 function Home() {

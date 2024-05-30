@@ -1,7 +1,7 @@
 import React from "react";
-import BuildIcon from "@material-ui/icons/Build";
+import BuildIcon from "@mui/icons-material/Build";
 import "./Projects.scss";
-import { Typography } from "@material-ui/core/";
+import { Typography } from "@mui/material";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import eatermeter01 from "../../assets/images/eatermeter-01.png";
 import eatermeter02 from "../../assets/images/eatermeter-02.png";

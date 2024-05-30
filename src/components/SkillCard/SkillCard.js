@@ -1,6 +1,6 @@
 import React from "react";
 import "./SkillCard.scss";
-import { ListItem, Typography } from "@material-ui/core/";
+import { ListItem, Typography } from "@mui/material";
 
 const SkillCard = (props) => {
   const { image, name } = props.skill;
