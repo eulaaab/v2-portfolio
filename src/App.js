@@ -80,6 +80,7 @@ function App() {
           </Grid>
           <Routes>
             <Route path="/" exact element={<Home/>}  />
+            <Route path="/v2-portfolio" element={<Home/>}  />
             <Route path="/about" element={<About/>} />
             <Route path="/projects" element={<Projects/>} />
           </Routes>
