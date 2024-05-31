@@ -79,9 +79,9 @@ function App() {
             </Grid>
           </Grid>
           <Routes>
+            <Route path="/" exact element={<Home/>}  />
             <Route path="/about" element={<About/>} />
             <Route path="/projects" element={<Projects/>} />
-            <Route path="/" exact element={<Home/>}  />
           </Routes>
         </div>
       </Router>
