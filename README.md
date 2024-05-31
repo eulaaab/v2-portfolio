@@ -2,4 +2,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Eula Bengco Fall 2020 Portfolio
 
-This is my second portfolio. I wanted to create a fall-themed portfolio for the upcoming change of season and also learn material-ui.
+This is my second portfolio. My playground and I want to create a seasonal themed app.

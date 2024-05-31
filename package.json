@@ -27,7 +27,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -50,6 +50,6 @@
     "@testing-library/dom": "^10.1.0",
     "gh-pages": "^6.1.1"
   },
-  "homepage": "https://eulaaab.github.io/"
+  "homepage": "https://eulaaab.github.io"
 
 }
